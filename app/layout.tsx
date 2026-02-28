@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { inter } from "./fonts";
 import "./globals.css";
+import { inter, playFairDisplay } from "@/app/fonts";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,8 +13,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable}`}>
-      <body>{children}</body>
+    <html lang="en">
+      <body className={`${inter.variable} ${playFairDisplay.variable} antialiased`}>{children}</body>
     </html>
   );
 }

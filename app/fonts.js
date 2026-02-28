@@ -1,10 +1,9 @@
-import { Inter } from "next/font/google";
-import { Playfair_Display } from "next/font/google";
+import { Inter, Playfair_Display } from "next/font/google";
 
 export const inter = Inter({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-inter-sans",
+  variable: "--font-inter",
 });
 
 export const playFairDisplay = Playfair_Display({

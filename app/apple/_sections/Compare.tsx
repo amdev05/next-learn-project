@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { SliderButton } from "../_components/SliderButton";
 
 interface Data {
   id: number;
@@ -19,7 +20,7 @@ interface Props {
 
 export default function Compare({ data }: Props) {
   return (
-    <section className="pb-28">
+    <section className="relative pb-28">
       <header className="">
         <div className="pt-10 pb-8 w-[87.5dvw] mx-auto ">
           <h1 className="text-[40px] font-bold">Mac</h1>
@@ -70,7 +71,7 @@ export default function Compare({ data }: Props) {
         </div>
       </div>
 
-      <div className="">
+      <div className="pb-24">
         <ul className="flex gap-x-5 overflow-x-auto scrollbar-hide snap-x px-[6.25dvw] scroll-pl-[6.25dvw]">
           {data.map((item) => (
             <li className="pr-7 snap-start" key={item.id}>
@@ -85,7 +86,7 @@ export default function Compare({ data }: Props) {
                   </div>
                   <Link href={`/${item.id}`} className=" pb-9">
                     <figure className="relative w-[232] h-[157] rounded-2xl overflow-hidden">
-                      <Image alt="" src={item.image} fill sizes="100vw, 50vw" className="object-cover" loading="eager" />
+                      <Image alt="" src={item.image} fill sizes="232px" className="object-cover" loading="eager" />
                     </figure>
                   </Link>
                   <div className="order-2 h-9.5">
@@ -125,22 +126,7 @@ export default function Compare({ data }: Props) {
         </ul>
       </div>
 
-      <div className="h-25 pt-7 ">
-        <div className="flex justify-end px-[6.25dvw]">
-          <div className="flex gap-x-5">
-            <button type="button" className="size-9 rounded-full overflow-hidden bg-[#e8e8ed]">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
-                <path d="M20 25c-.384 0-.768-.146-1.06-.44l-5.5-5.5a1.5 1.5 0 0 1 0-2.12l5.5-5.5a1.5 1.5 0 1 1 2.12 2.12L16.622 18l4.44 4.44A1.5 1.5 0 0 1 20 25z"></path>
-              </svg>
-            </button>
-            <button type="button" className="size-9 rounded-full overflow-hidden bg-[#e8e8ed]">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
-                <path d="M22.56 16.938l-5.508-5.5a1.493 1.493 0 0 0-2.116.003 1.502 1.502 0 0 0 .004 2.121L19.384 18l-4.444 4.438A1.502 1.502 0 0 0 15.996 25c.382 0 .764-.145 1.056-.438l5.508-5.5a1.502 1.502 0 0 0 0-2.125z"></path>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
+      <SliderButton classname="bottom-0 -translate-y-full" />
     </section>
   );
 }

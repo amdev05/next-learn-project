@@ -208,7 +208,7 @@ export const WHYAPPLEDATA = [
   },
   {
     id: 2,
-    icon: "/apple/applecard.svg",
+    icon: "/apple/applecard2.svg",
     title: "Pay over time, interest-free.",
     description: "When you choose to check out at Apple with Apple Card Monthly Installments.",
   },
@@ -303,7 +303,7 @@ export const MEDATA = [
   },
 ];
 
-export const FAQDATA = [
+export const UTWDATA = [
   {
     id: 1,
     title: "Mac and Iphone",
