@@ -14,7 +14,7 @@ interface DataProps {
 export default function ProductNav({ data }: DataProps) {
   return (
     <nav className="">
-      <div className="relative px-9">
+      <div className="w-fit relative px-9 mx-auto">
         <ul className="flex py-4 overflow-x-auto bar scrollbar-hide ">
           {data.map((nav, index) => (
             <li className="px-5 first:pl-0 last:pl-0" key={index}>

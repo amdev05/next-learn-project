@@ -17,9 +17,9 @@ export default function GoodToKnow({ data }: Props) {
   return (
     <section className="relative py-28">
       {/* Heading */}
-      <div className="w-[87.5dvw] mb-8 mx-auto">
+      <div className="mx-[6.25dvw] mb-8">
         <h2 className="">
-          <span className="text-2xl font-semibold">Get to Know Mac</span>
+          <span className="text-[32px] md:text-[40px] lg:text-[48px] font-semibold leading-tight">Get to Know Mac</span>
         </h2>
       </div>
 

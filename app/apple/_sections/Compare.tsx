@@ -22,13 +22,13 @@ export default function Compare({ data }: Props) {
   return (
     <section className="relative pb-28">
       <header className="">
-        <div className="pt-10 pb-8 w-[87.5dvw] mx-auto ">
-          <h1 className="text-[40px] font-bold">Mac</h1>
+        <div className="pt-10 pb-8 mx-[6.25dvw] ">
+          <h1 className="text-[40px] md:text-[64px] lg:text-[80px] font-bold">Mac</h1>
         </div>
       </header>
 
       <div className="">
-        <div className="relative w-[87.5dvw] mx-auto mb-10 bg-[#e8e8ed] rounded-full p-1">
+        <div className="relative max-w-fit mx-[6.25dvw] mb-10 bg-[#e8e8ed] rounded-full p-1">
           <ul className="flex overflow-auto scrollbar-hide rounded-full">
             <li className="">
               <button type="button" className="bg-black rounded-full text-white px-4 text-nowrap h-9 text-sm">

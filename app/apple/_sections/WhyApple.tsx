@@ -19,9 +19,9 @@ export default function WhyApple({ data }: Props) {
     <section className="relative py-28 bg-[#f5f5f7]">
       {/* Header */}
       <header className="">
-        <div className="mx-[6.25dvw] mb-7 space-y-5">
+        <div className="mx-[6.25dvw] mb-7 space-y-5 md:flex md:justify-between md:items-baseline-last">
           <h2 className="">
-            <span className="text-3xl font-semibold">
+            <span className="text-[32px] md:text-[40px] lg:text-[48px] font-semibold leading-tight">
               Why Apple is the best
               <br />
               place to buy Mac.
@@ -29,7 +29,7 @@ export default function WhyApple({ data }: Props) {
           </h2>
 
           <Link href={""}>
-            <span className="text-sm text-[#0066cc]">Shop Mac &gt;</span>
+            <span className="text-sm md:text-base text-[#0066cc]">Shop Mac &gt;</span>
           </Link>
         </div>
       </header>
