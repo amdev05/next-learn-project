@@ -35,7 +35,7 @@ export default function MacEssentials({ data }: Props) {
                   <span className="mt-2 text-sm lg:text-base text-center text-[#0077aa]">Learn more &gt;</span>
                 </div>
 
-                <figure className="relative w-full h-[327px] lg:h-[400px]">
+                <figure className="relative w-full h-81.75 lg:h-100">
                   <Image src={card.image} alt="image" fill sizes="650px" className="object-cover" />
                 </figure>
               </Link>
