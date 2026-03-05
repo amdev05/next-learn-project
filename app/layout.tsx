@@ -14,7 +14,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${playFairDisplay.variable} antialiased`}>{children}</body>
+      <body className={`${inter.variable} ${playFairDisplay.variable} antialiased min-h-dvh flex flex-col`}>
+        <div className="flex-1">{children}</div>
+
+        <footer className="p-4 flex justify-center">
+          <span className="text-center text-xs text-fill-secondary-dark">2026 Amdev.</span>
+        </footer>
+      </body>
     </html>
   );
 }
